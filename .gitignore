@@ -2,8 +2,8 @@
 
 node_modules/
 
-gulpfile.js/
+gulpfile.js
 
-package.json/
-package-lock.json/
+package.json
+package-lock.json
 
