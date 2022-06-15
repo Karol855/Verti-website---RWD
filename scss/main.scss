@@ -1,3 +1,9 @@
-body {
-  font-size: 14px;
-}
+//generic
+@import "generic/reset";
+@import "generic/fonts";
+//settings
+@import "settings/colors";
+@import "settings/mixins";
+@import "settings/variables";
+//elements
+@import "elements/container";
