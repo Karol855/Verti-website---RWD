@@ -1,0 +1,17 @@
+.logo > h1 > a {
+  background-color: #FC4887;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  font-size: 2em;
+  font-family: $oleoScript-font;
+}
+
+.logo-text {
+  font-family: $openSans-font;
+  display: block;
+  font-weight: 800;
+  color: rgb(105, 105, 105);
+  margin-top: 10px;
+  font-size: 0.7em;
+}

@@ -1,0 +1,17 @@
+.logo::before {
+  display: inline-block;
+  text-decoration: none;
+  font-family:'FontAwesome';
+  content: "\f0c9";
+  color: rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 20px;
+  width: 58px;
+  height: 38px;
+  //position: absolute;
+  //left: 6px;
+  //top: 6px;
+}
