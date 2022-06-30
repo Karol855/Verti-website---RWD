@@ -1,0 +1,4 @@
+@use "sass:map";
+body {
+  background-color: map.get($colors, page-background) ;
+}

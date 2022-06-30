@@ -1,17 +1,34 @@
-.logo::before {
-  display: inline-block;
-  text-decoration: none;
-  font-family:'FontAwesome';
-  content: "\f0c9";
-  color: rgba(0, 0, 0, 0.5);
-  background-color: white;
-  border-radius: 6px;
-  text-align: center;
-  line-height: 38px;
-  font-size: 20px;
-  width: 58px;
-  height: 38px;
-  //position: absolute;
-  //left: 6px;
-  //top: 6px;
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+    .hamburger-menu {
+      display: none;
+    }
+    .navicon {
+      display: none;
+    }
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.navicon {
+  height: 60px;
+  flex-shrink: 0;
+  flex-basis: 60px;
+  border: 10px solid blue;
+  cursor: pointer;
 }

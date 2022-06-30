@@ -1,0 +1,67 @@
+@use "sass:map";
+@use "sass:color";
+
+.first-box {
+  background-color: map.get($colors, box-background);
+  border-radius: 6px;
+  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+  font-family: $openSans-font;
+  padding: 3.5em;
+}
+.col-7 {
+  h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin: 5px 0 17px;
+  }
+  p {
+    font-size: 2.5em;
+    font-weight: 300;
+    line-height: 1.25em;
+  }
+}
+a.button-large {
+  font-size: 2em;
+  font-weight: 800;
+  padding-left: 0.7em;
+}
+
+.col-5 > ul > li  {
+  padding: 1.5em 0.8em;
+  max-width: 100%;
+  width: 23em;
+  border-radius: 6px;
+  &:first-child {
+    background-color: map.get($colors,blue-button-border);
+    margin-bottom: 18px;
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(#1691C3, 5%);
+      transition: 0.5s;
+    }
+    a {
+      color: map.get($colors, box-background);
+      &::after {
+        content: "\f0a9";
+        font-family: 'Font Awesome 5 Free';
+        margin-left: 2em;
+      }
+    }
+  }
+  &:last-child {
+    background-color: map.get($colors,button-large);
+    &:hover {
+      cursor: pointer;
+      background-color: map.get($colors, page-background);
+      transition: 0.5s;
+    }
+    a {
+      color: map.get($colors, text);
+      &::after {
+        content: "\f059";
+        font-family: 'Font Awesome 5 Free';
+        margin-left: 2.4em;
+      }
+    }
+  }
+}

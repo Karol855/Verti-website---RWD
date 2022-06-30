@@ -1,3 +1,4 @@
+@use "sass:math";
 //fonts
 $openSans-font: 'Open Sans', sans-serif;
 $oleoScript-font: 'Oleo Script', cursive;
@@ -5,3 +6,11 @@ $oleoScript-font: 'Oleo Script', cursive;
 $desktop:"screen and (max-width:1680px)";
 $tablet: "screen and (max-width:1280px)";
 $mobile: "screen and (max-width:736px)";
+//grid
+$columns :12;
+$column-base-width: math.div(100%,$columns);
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: $column-base-width * $i;
+  }
+}
