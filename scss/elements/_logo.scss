@@ -1,17 +1,28 @@
-.logo > h1 > a {
-  background-color: #FC4887;
+@use  "sass:color";
+@use  "sass:map";
+.logo {
+  display: flex;
+  margin-right: 10rem;
+}
+.logo > h1 {
+  background-color: map.get($colors,logo-background);
   border-radius: 5px;
-  padding: 5px 15px;
-  color: white;
-  font-size: 2em;
-  font-family: $oleoScript-font;
+  padding: 5px 9px;
+  a {
+    color: white;
+    font-size: 3em;
+    line-height: 1em;
+    font-family: $oleoScript-font;
+  }
 }
 
 .logo-text {
+  display: flex;
+  align-items: center;
   font-family: $openSans-font;
-  display: block;
   font-weight: 800;
   color: rgb(105, 105, 105);
   margin-top: 10px;
+  margin-left: 20px;
   font-size: 0.7em;
 }
