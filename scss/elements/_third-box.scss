@@ -1,0 +1,69 @@
+@use "sass:map";
+.full-container {
+  background-color: map.get($colors, box-background);
+  font-family: $openSans-font;
+  padding-bottom: 80px;
+  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+}
+.col-6 {
+  padding: 10px 0 0 10px;
+}
+.left-grid-image {
+  width: 100%;
+  border-radius: 8px;
+}
+.left-column {
+  width: 100%;
+  h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 1em;
+    padding-left: 10px;
+  }
+  .left-grid {
+    padding-bottom: 60px;
+  }
+}
+.column-col--left {
+  padding: 80px 0 40px 0;
+}
+.column-col--right {
+  padding: 80px 0 0 80px;
+}
+.right-column {
+  h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 1.1em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 2em;
+    color: map.get($colors, navigation-text);
+    font-weight: 300;
+    margin-bottom: 2em;
+    a {
+      color: map.get($colors, blue-button-border);
+      text-decoration: underline;
+    }
+  }
+}
+.blue-btn {
+  @extend %blue-button;
+  font-size: 1.4em;
+  padding: 16px 32px;
+  font-weight: 800;
+}
+.icon-more {
+  margin-left: 10px;
+  &::before {
+  content: "\f15c";
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 0.7em;
+  }
+}
+.icon-continue::before {
+  content: "\f0a9";
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 0.7em;
+}

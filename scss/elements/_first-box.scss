@@ -30,15 +30,9 @@ a.button-large {
   padding: 1.5em 0.8em;
   max-width: 100%;
   width: 23em;
-  border-radius: 6px;
   &:first-child {
-    background-color: map.get($colors,blue-button-border);
+    @extend %blue-button;
     margin-bottom: 18px;
-    &:hover {
-      cursor: pointer;
-      background-color: lighten(#1691C3, 5%);
-      transition: 0.5s;
-    }
     a {
       color: map.get($colors, box-background);
       &::after {
@@ -50,6 +44,7 @@ a.button-large {
   }
   &:last-child {
     background-color: map.get($colors,button-large);
+    border-radius: 6px;
     &:hover {
       cursor: pointer;
       background-color: map.get($colors, page-background);
