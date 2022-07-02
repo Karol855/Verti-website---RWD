@@ -21,8 +21,8 @@
   align-items: center;
   font-family: $openSans-font;
   font-weight: 800;
-  color: rgb(105, 105, 105);
+  color: map.get($colors, navigation-text);
   margin-top: 10px;
   margin-left: 20px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
