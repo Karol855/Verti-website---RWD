@@ -1,0 +1,11 @@
+@use  "sass:map";
+%blue-button {
+  background-color: map.get($colors,blue-button-border);
+  color: map.get($colors,box-background);
+  border-radius: 6px;
+  &:hover {
+    cursor: pointer;
+    background-color: lighten(#1691C3, 5%);
+    transition: 0.5s;
+  }
+}
