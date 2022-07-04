@@ -359,6 +359,24 @@ textarea {
   transition: 0.5s;
 }
 
+.widget-links h3, .left-column h3 {
+  font-size: 1.4em;
+  font-weight: 800;
+  color: #444444;
+}
+
+.list-links li a {
+  font-size: 1em;
+  line-height: 2em;
+  color: #696969;
+  font-weight: 300;
+  text-decoration: underline;
+}
+.list-links li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .col-1 {
   width: 8.3333333333%;
 }
@@ -485,8 +503,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 66px 44px;
-  position: relative;
+  padding: 66px 0 44px;
 }
 
 .nav-list {
@@ -652,8 +669,6 @@ a.button-large {
   width: 100%;
 }
 .left-column h3 {
-  font-size: 1.4em;
-  font-weight: 800;
   margin-bottom: 1em;
   padding-left: 10px;
 }
@@ -685,6 +700,10 @@ a.button-large {
   color: #1691C3;
   text-decoration: underline;
 }
+.right-column p a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .blue-btn {
   font-size: 1.4em;
@@ -705,5 +724,65 @@ a.button-large {
   content: "\f0a9";
   font-family: "Font Awesome 5 Free";
   margin-right: 0.7em;
+}
+
+.footer {
+  padding: 96px 0 128px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.widget-links h3 {
+  margin-bottom: 1em;
+}
+.widget-links p {
+  font-size: 1em;
+  line-height: 2em;
+  color: #696969;
+  font-weight: 300;
+}
+
+.contact-links {
+  display: flex;
+  margin-bottom: 24px;
+}
+.contact-links li {
+  width: 45px;
+  height: 45px;
+  background-color: #696969;
+  margin-right: 4px;
+  border-radius: 6px;
+}
+.contact-links li .icon-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  color: #AAAAAA;
+}
+.menu-bottom li {
+  line-height: 2em;
+  font-weight: 300;
+}
+.menu-bottom li a {
+  color: #AAAAAA;
+  text-decoration: underline;
+}
+.menu-bottom li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-bottom li:first-child::after, .menu-bottom li:nth-child(2)::after {
+  content: "";
+  border-left: 1px solid #AAAAAA;
+  margin-left: 10px;
+  padding: 5px 10px 5px 0;
 }
 /*# sourceMappingURL=main.css.map */

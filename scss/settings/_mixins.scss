@@ -1,4 +1,5 @@
 @use  "sass:map";
+// EXTEND
 %blue-button {
   background-color: map.get($colors,blue-button-border);
   color: map.get($colors,box-background);
@@ -7,5 +8,33 @@
     cursor: pointer;
     background-color: lighten(#1691C3, 5%);
     transition: 0.5s;
+  }
+}
+%h3-style {
+  font-size: 1.4em;
+  font-weight: 800;
+  color: map.get($colors,text);
+}
+%text-style {
+  font-size: 1em;
+  line-height: 2em;
+  color: map.get($colors, navigation-text);
+  font-weight: 300;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// MIXINS
+@mixin mobile {
+  @media (max-width:#{$mobile}) {
+  @content;
+  }
+}
+@mixin tablet {
+  @media (min-width:#{$tablet-min}) and (max-width:#{$tablet-max}) {
+    @content;
   }
 }

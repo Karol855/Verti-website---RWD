@@ -15,8 +15,7 @@
 .left-column {
   width: 100%;
   h3 {
-    font-size: 1.4em;
-    font-weight: 800;
+    @extend %h3-style;
     margin-bottom: 1em;
     padding-left: 10px;
   }
@@ -45,6 +44,10 @@
     a {
       color: map.get($colors, blue-button-border);
       text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
 }
