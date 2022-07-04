@@ -3,6 +3,6 @@
   flex-wrap: wrap;
 }
 [class*='col-'] {
-  min-height: 1px;
-  padding: 20px;
+  min-height: 0.0625em;
+  padding: 1.25em;
 }

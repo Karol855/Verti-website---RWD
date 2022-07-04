@@ -3,7 +3,7 @@
 %blue-button {
   background-color: map.get($colors,blue-button-border);
   color: map.get($colors,box-background);
-  border-radius: 6px;
+  border-radius: 0.375em;
   &:hover {
     cursor: pointer;
     background-color: lighten(#1691C3, 5%);

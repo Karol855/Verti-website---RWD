@@ -3,8 +3,8 @@
 
 .first-box {
   background-color: map.get($colors, box-background);
-  border-radius: 6px;
-  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+  border-radius: 0.375em;
+  box-shadow: 0 0.1875em 0 0 rgb(0 0 0 / 5%);
   font-family: $openSans-font;
   padding: 3.5em;
 }
@@ -12,7 +12,7 @@
   h2 {
     font-size: 3em;
     font-weight: 800;
-    margin: 5px 0 17px;
+    margin: 0.1041666em 0 0.3541666em;
   }
   p {
     font-size: 2.5em;
@@ -32,7 +32,7 @@ a.button-large {
   width: 23em;
   &:first-child {
     @extend %blue-button;
-    margin-bottom: 18px;
+    margin-bottom: 1.125em;
     a {
       color: map.get($colors, box-background);
       &::after {
@@ -44,7 +44,7 @@ a.button-large {
   }
   &:last-child {
     background-color: map.get($colors,button-large);
-    border-radius: 6px;
+    border-radius: 0.375em;
     &:hover {
       cursor: pointer;
       background-color: map.get($colors, page-background);

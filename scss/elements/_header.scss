@@ -3,14 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 66px 0 44px;
-  //position: relative;
+  padding: 4.125em 0 2.75em;
 }
 .nav-list {
   display: flex;
 }
 .nav-elements {
-  padding-left: 20px;
+  padding-left: 1.25em;
 
   &:first-of-type > a {
     color: white;
@@ -19,8 +18,8 @@
   a {
     font-family: $openSans-font;
     color: map.get($colors, navigation-text);
-    padding: 6.5px 13px;
-    border-radius: 5px;
+    padding: 0.40625em 0.8125em;
+    border-radius: 0.3125em;
     font-weight: 800;
     cursor: pointer;
   &:not(.nav-elements:first-of-type > a):hover {
