@@ -2,12 +2,11 @@
 @use  "sass:map";
 .logo {
   display: flex;
-  margin-right: 10rem;
 }
 .logo > h1 {
   background-color: map.get($colors,logo-background);
-  border-radius: 5px;
-  padding: 5px 9px;
+  border-radius: 0.3125em;
+  padding: 0.3125em 0.5625em;
   a {
     color: white;
     font-size: 3em;
@@ -22,7 +21,7 @@
   font-family: $openSans-font;
   font-weight: 800;
   color: map.get($colors, navigation-text);
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 0.78125em;
+  margin-left: 1.5625em;
   font-size: 0.8em;
 }

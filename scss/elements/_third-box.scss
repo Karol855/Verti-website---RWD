@@ -2,32 +2,32 @@
 .full-container {
   background-color: map.get($colors, box-background);
   font-family: $openSans-font;
-  padding-bottom: 80px;
-  box-shadow: 0 3px 0 0 rgb(0 0 0 / 5%);
+  padding-bottom: 5em;
+  box-shadow: 0 0.1875em 0 0 rgb(0 0 0 / 5%);
 }
 .col-6 {
-  padding: 10px 0 0 10px;
+  padding: 0.625em 0 0 0.625em;
 }
 .left-grid-image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 .left-column {
   width: 100%;
   h3 {
     @extend %h3-style;
     margin-bottom: 1em;
-    padding-left: 10px;
+    padding-left: 0.44642857em;
   }
   .left-grid {
-    padding-bottom: 60px;
+    padding-bottom: 3.75em;
   }
 }
 .column-col--left {
-  padding: 80px 0 40px 0;
+  padding: 5em 0 2.5em 0;
 }
 .column-col--right {
-  padding: 80px 0 0 80px;
+  padding: 5em 0 0 5em;
 }
 .right-column {
   h2 {
@@ -54,11 +54,11 @@
 .blue-btn {
   @extend %blue-button;
   font-size: 1.4em;
-  padding: 16px 32px;
+  padding: 0.71428571em 1.428571em;
   font-weight: 800;
 }
 .icon-more {
-  margin-left: 10px;
+  margin-left: 0.446428571em;
   &::before {
   content: "\f15c";
   font-family: 'Font Awesome 5 Free';
