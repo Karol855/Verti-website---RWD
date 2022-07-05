@@ -3,10 +3,10 @@
 $openSans-font: 'Open Sans', sans-serif;
 $oleoScript-font: 'Oleo Script', cursive;
 //resolution
-$desktop:"(min-width:1024px)";
-$tablet-max: 1023px;
-$tablet-min: 769px;
-$mobile: 768px;
+$desktop:1024.1px;
+$tablet-max: 1024px;
+$tablet-min: 769.1px;
+$mobile: 769px;
 //grid
 $columns :12;
 $column-base-width: math.div(100%,$columns);
