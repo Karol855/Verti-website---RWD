@@ -7,6 +7,7 @@
 #### - HTML
 #### - CSS
 #### - SCSS
+#### - RWD
 #### - GULP
 #### - NPM
 
