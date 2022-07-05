@@ -10,11 +10,13 @@
 }
 .col-7 {
   h2 {
+    color: map.get($colors, text);
     font-size: 3em;
     font-weight: 800;
     margin: 0.1041666em 0 0.3541666em;
   }
   p {
+    color: map.get($colors, navigation-text);
     font-size: 2.5em;
     font-weight: 300;
     line-height: 1.25em;
@@ -24,6 +26,9 @@ a.button-large {
   font-size: 2em;
   font-weight: 800;
   padding-left: 0.7em;
+  @include tablet {
+    padding-left: 0.4em;
+  }
 }
 
 .col-5 > ul > li  {
@@ -39,6 +44,9 @@ a.button-large {
         content: "\f0a9";
         font-family: 'Font Awesome 5 Free';
         margin-left: 2em;
+        @include tablet {
+          margin-left: 1.7em;
+        }
       }
     }
   }
@@ -56,6 +64,9 @@ a.button-large {
         content: "\f059";
         font-family: 'Font Awesome 5 Free';
         margin-left: 2.4em;
+        @include tablet {
+          margin-left: 2.1em;
+        }
       }
     }
   }

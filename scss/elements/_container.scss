@@ -3,4 +3,12 @@
   max-width: 75em;
   width: 100%;
   padding: 0 0.9375em;
+  @include tablet {
+    max-width: 60em;
+    width: 100%;
+  }
+  @include tablet {
+    max-width: 47.5em;
+    width: 100%;
+  }
 }

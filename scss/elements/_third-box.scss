@@ -4,6 +4,9 @@
   font-family: $openSans-font;
   padding-bottom: 5em;
   box-shadow: 0 0.1875em 0 0 rgb(0 0 0 / 5%);
+  @include tablet {
+    padding-bottom: 4.5em;
+  }
 }
 .col-6 {
   padding: 0.625em 0 0 0.625em;
@@ -18,22 +21,34 @@
     @extend %h3-style;
     margin-bottom: 1em;
     padding-left: 0.44642857em;
+    @include tablet {
+      font-size: 1.25em;
+    }
   }
   .left-grid {
     padding-bottom: 3.75em;
   }
 }
 .column-col--left {
-  padding: 5em 0 2.5em 0;
+  padding: 5em 0 0 0;
+  @include tablet {
+    padding: 3.125em 0 0 0;
+  }
 }
 .column-col--right {
   padding: 5em 0 0 5em;
+  @include tablet {
+    padding: 3.125em 0 0 3.125em;
+  }
 }
 .right-column {
   h2 {
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 1.1em;
+    @include tablet {
+      font-size: 2.1em;
+    }
   }
   p {
     font-size: 1em;
@@ -41,6 +56,9 @@
     color: map.get($colors, navigation-text);
     font-weight: 300;
     margin-bottom: 2em;
+    @include tablet {
+      font-size: 0.9em;
+    }
     a {
       color: map.get($colors, blue-button-border);
       text-decoration: underline;
@@ -56,6 +74,9 @@
   font-size: 1.4em;
   padding: 0.71428571em 1.428571em;
   font-weight: 800;
+  @include tablet {
+    font-size: 1.25em;
+  }
 }
 .icon-more {
   margin-left: 0.446428571em;
