@@ -33,12 +33,18 @@
     font-weight: 800;
     line-height: 1em;
     margin-bottom: 0.25em;
+    @include tablet {
+      font-size: 1.25em;
+    }
   }
   p {
     color: map.get($colors,navigation-text);
     font-size: 1em;
     font-weight: 300;
     line-height: 2.3em;
+    @include tablet {
+      font-size: 0.9em;
+    }
   }
   p:nth-child(2) {
     margin-bottom: 2em;

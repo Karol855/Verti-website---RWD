@@ -2,16 +2,27 @@
 @use  "sass:map";
 .logo {
   display: flex;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .logo > h1 {
   background-color: map.get($colors,logo-background);
   border-radius: 0.3125em;
   padding: 0.3125em 0.5625em;
+  @include mobile {
+    padding: 0.35em 0.6875em;
+  ;
+  }
   a {
     color: white;
     font-size: 3em;
     line-height: 1em;
     font-family: $oleoScript-font;
+    @include mobile {
+      font-size: 2.5em;
+    }
   }
 }
 
@@ -24,4 +35,9 @@
   margin-top: 0.78125em;
   margin-left: 1.5625em;
   font-size: 0.8em;
+  @include mobile {
+    margin: 0;
+    line-height: 3em;
+    justify-content: center;
+  }
 }
