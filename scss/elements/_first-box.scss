@@ -7,19 +7,44 @@
   box-shadow: 0 0.1875em 0 0 rgb(0 0 0 / 5%);
   font-family: $openSans-font;
   padding: 3.5em;
+  @include mobile {
+    padding: 1em;
+  }
+  .row {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .col-5 {
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
 }
 .col-7 {
+  @include mobile {
+    width: 100%;
+    text-align: center;
+  }
   h2 {
     color: map.get($colors, text);
     font-size: 3em;
     font-weight: 800;
     margin: 0.1041666em 0 0.3541666em;
+    @include mobile {
+      font-size: 1.8em;
+      margin: 0.763em 0 0.486em;
+    }
   }
   p {
     color: map.get($colors, navigation-text);
     font-size: 2.5em;
     font-weight: 300;
     line-height: 1.25em;
+    @include mobile {
+      font-size: 1.375em;
+    }
   }
 }
 a.button-large {
@@ -29,17 +54,29 @@ a.button-large {
   @include tablet {
     padding-left: 0.4em;
   }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .col-5 > ul > li  {
   padding: 1.5em 0.8em;
   max-width: 100%;
   width: 23em;
+  @include mobile {
+    width: 100%;
+    padding: 0.85em 0.4em;
+  }
   &:first-child {
     @extend %blue-button;
     margin-bottom: 1.125em;
     a {
       color: map.get($colors, box-background);
+      @include mobile {
+        font-size: 1.125em;
+        display: flex;
+        justify-content: center;
+      }
       &::after {
         content: "\f0a9";
         font-family: 'Font Awesome 5 Free';
@@ -47,8 +84,18 @@ a.button-large {
         @include tablet {
           margin-left: 1.7em;
         }
+        @include mobile {
+          display: none;
+        }
+      }
+      @include mobile {
+        &::before {
+          content: "\f0a9";
+          font-family: 'Font Awesome 5 Free';
+          margin-right: 1em;
       }
     }
+  }
   }
   &:last-child {
     background-color: map.get($colors,button-large);
@@ -60,12 +107,27 @@ a.button-large {
     }
     a {
       color: map.get($colors, text);
+      @include mobile {
+        font-size: 1.125em;
+        display: flex;
+        justify-content: center;
+      }
       &::after {
         content: "\f059";
         font-family: 'Font Awesome 5 Free';
         margin-left: 2.4em;
         @include tablet {
           margin-left: 2.1em;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+      @include mobile {
+        &::before {
+          content: "\f059";
+          font-family: 'Font Awesome 5 Free';
+          margin-right: 1em;
         }
       }
     }

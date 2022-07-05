@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:math";
 .full-container {
   background-color: map.get($colors, box-background);
   font-family: $openSans-font;
@@ -7,9 +8,21 @@
   @include tablet {
     padding-bottom: 4.5em;
   }
+  @include mobile {
+    padding-bottom: 2.5em;
+  }
+}
+.third-box > .row {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .col-6 {
   padding: 0.625em 0 0 0.625em;
+  @include mobile {
+    padding: 0.3125em 0.3125em;
+  }
 }
 .left-grid-image {
   width: 100%;
@@ -24,6 +37,9 @@
     @include tablet {
       font-size: 1.25em;
     }
+    @include mobile {
+      font-size: 1.125em;
+    }
   }
   .left-grid {
     padding-bottom: 3.75em;
@@ -34,11 +50,25 @@
   @include tablet {
     padding: 3.125em 0 0 0;
   }
+  @include mobile {
+    width: 100%;
+    padding: 2.5em 0 0 0;
+  }
 }
 .column-col--right {
   padding: 5em 0 0 5em;
   @include tablet {
     padding: 3.125em 0 0 3.125em;
+  }
+  @include mobile {
+    padding: 2.5em 0 2.75em 0.5em;
+    width: 100%;
+    &::after {
+      content: "";
+      border-bottom: 1px solid map.get($colors, page-background);
+      padding-right: 100%;
+      padding-bottom: 2.5em;
+    }
   }
 }
 .right-column {
@@ -46,8 +76,12 @@
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 1.1em;
+    color: map.get($colors, text);
     @include tablet {
       font-size: 2.1em;
+    }
+    @include mobile {
+      font-size: 1.125em;
     }
   }
   p {
@@ -59,8 +93,10 @@
     @include tablet {
       font-size: 0.9em;
     }
+    @include mobile {
+      font-size: 0.9em;
+    }
     a {
-      color: map.get($colors, blue-button-border);
       text-decoration: underline;
       &:hover {
         text-decoration: none;
@@ -77,17 +113,37 @@
   @include tablet {
     font-size: 1.25em;
   }
+  @include mobile {
+    font-size: 1.125em;
+    width: 100%;
+    padding: 0.75em 1em;
+  }
 }
 .icon-more {
+  color: map.get($colors,box-background);
   margin-left: 0.446428571em;
+  @include mobile {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   &::before {
   content: "\f15c";
   font-family: 'Font Awesome 5 Free';
   margin-right: 0.7em;
   }
 }
-.icon-continue::before {
-  content: "\f0a9";
-  font-family: 'Font Awesome 5 Free';
-  margin-right: 0.7em;
+.icon-continue {
+  color: map.get($colors,box-background);
+  @include mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &::before {
+    content: "\f0a9";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 0.7em;
+  }
 }
