@@ -36,6 +36,10 @@
       font-size: 1.8em;
       margin: 0.763em 0 0.486em;
     }
+    @include small-tablet {
+      font-size: 2.5em;
+      margin: 0.2em 0 0.486em;
+    }
   }
   p {
     color: map.get($colors, navigation-text);
@@ -45,6 +49,9 @@
     @include mobile {
       font-size: 1.375em;
     }
+    @include small-tablet {
+      font-size: 1.85em;
+    }
   }
 }
 a.button-large {
@@ -52,6 +59,9 @@ a.button-large {
   font-weight: 800;
   padding-left: 0.7em;
   @include tablet {
+    padding-left: 0.4em;
+  }
+  @include small-tablet {
     padding-left: 0.4em;
   }
   @include mobile {
@@ -67,6 +77,10 @@ a.button-large {
     width: 100%;
     padding: 0.85em 0.4em;
   }
+  @include small-tablet {
+    width: 100%;
+    padding: 1.4em 0.6em;
+  }
   &:first-child {
     @extend %blue-button;
     margin-bottom: 1.125em;
@@ -77,11 +91,17 @@ a.button-large {
         display: flex;
         justify-content: center;
       }
+      @include small-tablet {
+        font-size: 1.5em;
+      }
       &::after {
         content: "\f0a9";
         font-family: 'Font Awesome 5 Free';
         margin-left: 2em;
         @include tablet {
+          margin-left: 1.7em;
+        }
+        @include small-tablet {
           margin-left: 1.7em;
         }
         @include mobile {
@@ -112,11 +132,17 @@ a.button-large {
         display: flex;
         justify-content: center;
       }
+      @include small-tablet {
+        font-size: 1.5em;
+      }
       &::after {
         content: "\f059";
         font-family: 'Font Awesome 5 Free';
         margin-left: 2.4em;
         @include tablet {
+          margin-left: 2.1em;
+        }
+        @include small-tablet {
           margin-left: 2.1em;
         }
         @include mobile {

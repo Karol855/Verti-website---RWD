@@ -35,6 +35,10 @@
       font-size: 0.85em;
       padding: 0.46875em 1.031em;
     }
+    @include small-tablet {
+      font-size: 0.75em;
+      padding: 0.45em 0.8em;
+    }
   &:not(.nav-elements:first-of-type > a):hover {
     background-color: white;
     transition: 0.5s;
