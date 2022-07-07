@@ -6,6 +6,9 @@
   @include tablet {
     padding: 5.5em 0 7.4em;
   }
+  @include small-tablet {
+    padding: 2.5em 0 1.875em;
+  }
   @include mobile {
     padding: 2.5em 0 1.875em;
   }
@@ -16,10 +19,13 @@
     }
     .col-3 {
     padding: 2.5em 0 0 2.5em;
-    @include tablet {
+      @include tablet {
       padding: 1.5625em 0 0 1.5625em;
     }
-    @include mobile {
+      @include small-tablet {
+        padding: 1em 0 0 1em;
+      }
+      @include mobile {
       padding: 1.25em 0 0 1.25em;
       width: 100%;
     }
@@ -29,6 +35,9 @@
 
 .widget-links {
   padding-bottom: 2em;
+  @include small-tablet {
+    padding-bottom: 1em;
+  }
   @include mobile {
     &::after {
       content: "";
@@ -43,6 +52,9 @@
     @include tablet {
       font-size: 1.25em;
     }
+    @include small-tablet {
+      font-size: 1.0625em;
+    }
     @include mobile {
       font-size: 1.0625em;
     }
@@ -55,6 +67,9 @@
     @include tablet {
       font-size: 0.9em;
     }
+    @include small-tablet {
+      font-size: 0.7em;
+    }
     @include mobile {
       font-size: 0.9em;
     }
@@ -64,6 +79,9 @@
   @extend %text-style;
   @include tablet {
     font-size: 0.9em;
+  }
+  @include small-tablet {
+    font-size: 0.7em;
   }
   @include mobile {
     font-size: 0.9em;
@@ -87,6 +105,10 @@
       width: 2.25em;
       height: 2.25em;
     }
+    @include small-tablet {
+      width: 1.7em;
+      height: 1.7em;
+    }
     .icon-brands {
       font-size: 0.9em;
       display: flex;
@@ -97,6 +119,9 @@
       color: map.get($colors, box-background);
       @include tablet {
         font-size: 0.75em;
+      }
+      @include small-tablet {
+        font-size: 0.5em;
       }
       @include mobile {
         font-size: 0.75em;
@@ -113,12 +138,18 @@
     display: flex;
     flex-direction: column;
   }
+  @include small-tablet {
+    margin-bottom: 1em;
+  }
   li {
     font-size: 1em;
     line-height: 2em;
     font-weight: 300;
     @include tablet {
       font-size: 0.9em;
+    }
+    @include small-tablet {
+      font-size: 0.7em;
     }
     @include mobile {
       font-size: 0.9em;
@@ -140,10 +171,18 @@
         @include tablet {
           padding: 0.285em 0.5em 0.285em 0;
         }
+        @include small-tablet {
+          padding: 0.2em 0.4em 0.2em 0;
+        }
         @include mobile {
           display: none;
         }
       }
     }
+  }
+}
+div.col-12 {
+  @include small-tablet {
+    padding: 0.6em;
   }
 }

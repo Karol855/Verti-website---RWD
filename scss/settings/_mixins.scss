@@ -38,3 +38,8 @@
     @content;
   }
 }
+@mixin small-tablet {
+  @media (min-width:#{$small-tablet-min}) and (max-width:#{$small-tablet-max}) {
+    @content;
+  }
+}

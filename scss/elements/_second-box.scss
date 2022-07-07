@@ -48,6 +48,9 @@
   @include mobile {
     padding: 1.875em 0.9375em;
   }
+  @include small-tablet {
+    padding: 1.875em 0.9375em;
+  }
   h2 {
     font-size: 1.4em;
     font-weight: 800;
@@ -56,6 +59,9 @@
     color: map.get($colors, text);
     @include tablet {
       font-size: 1.25em;
+    }
+    @include small-tablet {
+      font-size: 1.15em;
     }
     @include mobile {
       font-size: 1.25em;
@@ -68,6 +74,9 @@
     line-height: 2.3em;
     @include tablet {
       font-size: 0.9em;
+    }
+    @include small-tablet {
+      font-size: 0.85em;
     }
     @include mobile {
       font-size: 0.9em;
